@@ -23,24 +23,6 @@ const getGryphon = async (req, res, next) => {
   }
 };
 
-const postGryphon = async (req, res, next) => {
-  try {
-    let gryphon = req.body;
-    //Rajouter le post
-    return res.status(501).send("Not implemented yet!");
-  } catch (e) {
-    next(e);
-  }
-};
-
-const patchGryphon = async (req, res, next) => {
-  try {
-    return res.status(501).send("Not implemented yet!");
-  } catch (e) {
-    next(e);
-  }
-};
-
 // ==============
 // UTILS FUNCTION
 // ==============
@@ -51,5 +33,3 @@ getGryphonById = (id) => {
 
 exports.getGryphons = getGryphons;
 exports.getGryphon = getGryphon;
-exports.patchGryphon = patchGryphon;
-exports.postGryphon = postGryphon;
